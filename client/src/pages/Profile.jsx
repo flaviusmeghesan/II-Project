@@ -14,6 +14,7 @@ signOutFailure,
 signOutSuccess} from '../redux/user/userSlice'
 import { useDispatch } from 'react-redux'
 import { set } from 'mongoose'
+import {Link} from 'react-router-dom'
 
 export default function Profile() {
   const fileRef = useRef(null);
@@ -160,10 +161,14 @@ export default function Profile() {
         p-3 uppercase hover:opacity-95 disabled:opacity-80'>
           {loading ? 'loading...' : 'Update'}
           </button>
-          <button className='bg-red-900 text-white rounded-lg
+          {/* <button className='bg-red-900 text-white rounded-lg
         p-3 uppercase hover:opacity-95 disabled:opacity-80'>
             Create listing
-          </button>
+          </button> */}
+          <Link className='bg-slate-900 text-white p-3
+          rounded-lg uppercase text-center hover:opacity-95' to={"/create-listing"}>
+            Create listing 
+          </Link>
       </form>
       <div className='flex justify-between mt-5'>
         <span 
