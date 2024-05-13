@@ -160,6 +160,10 @@ export default function Profile() {
         p-3 uppercase hover:opacity-95 disabled:opacity-80'>
           {loading ? 'loading...' : 'Update'}
           </button>
+          <button className='bg-red-900 text-white rounded-lg
+        p-3 uppercase hover:opacity-95 disabled:opacity-80'>
+            Create listing
+          </button>
       </form>
       <div className='flex justify-between mt-5'>
         <span 
