@@ -49,7 +49,7 @@ export default function Search() {
                         <span>Furnished</span>
                     </div>
                 </div>
-                <div className='flex gap-2 items-center'> 
+                <div className='flex gap-4 items-center'> 
                 <label className='font-semibold'>
                     Sort:
                     <select className='border rounded-lg p-3' id='sort_order'>
